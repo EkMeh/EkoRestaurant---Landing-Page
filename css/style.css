@@ -1,0 +1,565 @@
+body{
+    background: url(../img/background.jpg);
+    object-fit: cover;  
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 200vh; height: 80vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+/* texture style set start*/
+#img_texture img
+{
+    position: absolute;
+    right:0;
+    width: 100vh;height: 99.5vh;
+    border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    filter: blur(.2rem);
+}
+/* texture style set ends*/
+
+/* header style set starts  */
+.header .box-h1
+{
+    padding: 1.5rem;
+    position: relative;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .box-h1 .logo
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:260px;
+    height: 90px;
+    padding: 0 2rem;
+}
+
+.header .box-h1 .logo img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header .box-h1 .logo h2
+{
+    text-transform: uppercase;
+    color:#9A7D0A;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    padding: 0 .2rem;
+}
+
+.header .box-h1 .logo h2 span
+{
+    text-transform: uppercase;
+    color:#00afb5;
+    padding: 0 .2rem;
+}
+
+.header .box-h1 .navigation ul
+{
+    position: relative;
+    display: flex;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;  
+}
+
+.header .box-h1 .navigation ul li 
+{
+    list-style: none;
+    letter-spacing:.2rem;
+    text-decoration: none;
+    margin-left: 2.3rem;
+    padding: 2.3rem .7rem;
+    cursor: pointer;
+}
+
+.header .box-h1 .navigation ul li:nth-child(1)
+{
+    border-bottom-right-radius: 3rem; 
+    background:rgb(16, 51, 106);
+}
+
+.header .box-h1 .navigation ul li:hover
+{
+    border-bottom-right-radius: 3rem; 
+    background:rgb(16, 51, 106);
+    transition: .5s;
+}
+
+.header .box-h1 .userbox ul
+{
+    position: relative;
+    display: flex;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    margin-left: 17rem;
+}
+
+.header .box-h1 .userbox ul li 
+{
+    list-style: none;
+    letter-spacing:.2rem;
+    text-decoration: none;
+    padding: 2.3rem 2rem;
+    cursor: pointer;
+}
+
+/* header style set ends  */
+
+/* products style set starts */
+.products .box-p1
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.products .box-p1 .title
+{
+    position: relative;
+    margin-top: 10%;
+    margin-right: 15rem;
+}
+
+
+.products .box-p1 .title .p1
+{
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    font-weight: 900;
+    color:black;
+    text-transform: uppercase;
+}
+
+
+.products .box-p1 .title .p2
+{
+    font-size: 2.5rem;
+    letter-spacing: .5rem;
+    font-weight: 900;
+    color:white;
+    text-transform: uppercase;
+    margin-left: 3.4rem;
+}
+
+.products .box-p1 .title .p3
+{
+    font-size: 2rem;
+    letter-spacing: .5rem;
+    font-weight: 900;
+    color:#9A7D0A;
+    text-transform: uppercase;
+}
+
+.products .box-p1 .product-img img
+{
+    position: relative;
+    right:35%;top: 13%;
+    width: 65%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+/* products style set ends */
+
+/* margarita syle set starts  */
+.margarita .box-pm1
+{
+    position: absolute;
+    top: 25%;right: 25%;
+    display: flex;
+    border: .1rem solid rgb(30, 51, 106);
+    background:rgb(30, 51, 106);
+    box-shadow: 5px -10px 8px -5px rgba(65, 87, 143, 0.8);
+    padding: .3rem;
+    width: 230px;
+    border-bottom-left-radius: 35rem;
+    border-bottom-right-radius: 35rem;
+    border-top-left-radius: 35rem;
+    border-top-right-radius: 35rem;
+    cursor: pointer;
+}
+
+.margarita .box-pm1 img
+{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 3rem;
+}
+
+.margarita .box-pm1 p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: .8rem;
+    margin-left: 1rem;
+}
+
+
+.margarita .box-pm1 .productInfo
+{
+    position: absolute;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    border-radius: 2rem;
+    visibility: hidden;
+    margin-left:-40px; margin-top: 60px;
+}
+
+.margarita .box-pm1 .productInfo h2
+{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .4rem;
+    margin-top: 1rem;
+}
+
+.margarita .box-pm1 .productInfo p
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    margin-left: 40px;
+}
+/* margarita syle set ends  */
+
+
+/* capricious syle set starts  */
+.capricious .box-pm2
+{
+    position: absolute;
+    top: 36%;right: 20%;
+    display: flex;
+    border: .1rem solid rgba(30, 56, 106, 0.8);
+    background:rgba(30, 56, 106, 0.8);
+    box-shadow: 5px -10px 8px -5px rgba(30, 87, 143, 0.8);
+    padding: .3rem;
+    width: 270px;
+    border-bottom-left-radius: 35rem;
+    border-bottom-right-radius: 35rem;
+    border-top-left-radius: 35rem;
+    border-top-right-radius: 35rem;
+    cursor: pointer;
+}
+
+.capricious .box-pm2 img
+{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    margin-left: 3rem;
+}
+
+.capricious .box-pm2 p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-top:1rem;
+    margin-left: 1rem;
+}
+
+
+.capricious .box-pm2 .productInfo1
+{
+    position: absolute;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    border-radius: 2rem;
+    visibility: hidden;
+    margin-left:-40px; margin-top: 60px;
+}
+
+.capricious .box-pm2 .productInfo1 h2
+{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .4rem;
+    margin-top: 1rem;
+}
+
+.capricious .box-pm2 .productInfo1 p
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    margin-left: 40px;
+}
+/* capricious syle set ends  */
+
+
+/* vegetarian syle set starts  */
+.vegetarian .box-pm3
+{
+    display: flex;
+    position: absolute;
+    top: 48%;right: 15%;
+    display: flex;
+    border: .1rem solid rgb(4, 23, 53);
+    background:rgb(4, 23, 53);
+    box-shadow: 5px -10px 8px -5px rgba(1, 87, 143, 0.8);
+    padding: .3rem;
+    width: 315px;
+    border-bottom-left-radius: 35rem;
+    border-bottom-right-radius: 35rem;
+    border-top-left-radius: 35rem;
+    border-top-right-radius: 35rem;
+    cursor: pointer;
+}
+
+.vegetarian .box-pm3 img
+{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+    margin-left: 3rem;
+}
+
+.vegetarian .box-pm3 p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-top:1.1rem;
+    margin-left: 1rem;
+}
+
+
+.vegetarian .box-pm3 .productInfo2
+{
+    position: absolute;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    border-radius: 2rem;
+    visibility: hidden;
+    margin-left:-40px; margin-top: 60px;
+}
+
+.vegetarian .box-pm3 .productInfo2 h2
+{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .4rem;
+    margin-top: 1rem;
+}
+
+.vegetarian .box-pm3 .productInfo2 p
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    margin-left: 40px;
+}
+/* vegetarian syle set ends  */
+
+
+/* prosciutto syle set starts  */
+.prosciutto .box-pm1
+{
+    position: absolute;
+    top: 73%;right: 25%;
+    display: flex;
+    border: .1rem solid rgb(30, 51, 106);
+    background:rgb(30, 51, 106);
+    box-shadow: 5px -10px 8px -5px rgba(65, 87, 143, 0.8);
+    padding: .3rem;
+    width: 230px;
+    border-bottom-left-radius: 35rem;
+    border-bottom-right-radius: 35rem;
+    border-top-left-radius: 35rem;
+    border-top-right-radius: 35rem;
+    cursor: pointer;
+}
+
+.prosciutto .box-pm1 img
+{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    margin-left: 3rem;
+}
+
+.prosciutto .box-pm1 p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: .8rem;
+    margin-left: 1rem;
+}
+
+
+.prosciutto .box-pm1 .productInfo4
+{
+    position: absolute;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    border-radius: 2rem;
+    visibility: hidden;
+    margin-left:-40px; margin-top: 60px;
+}
+
+.prosciutto .box-pm1 .productInfo4 h2
+{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .4rem;
+    margin-top: 1rem;
+}
+
+.prosciutto .box-pm1 .productInfo4 p
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    margin-left: 40px;
+}
+/* prosciutto syle set ends  */
+
+
+/* poloforsa syle set starts  */
+.poloforsa .box-pm2
+{
+    position: absolute;
+    top: 61%;right: 20%;
+    display: flex;
+    border: .1rem solid rgba(30, 56, 106, 0.8);
+    background:rgba(30, 56, 106, 0.8);
+    box-shadow: 5px -10px 8px -5px rgba(30, 87, 143, 0.8);
+    padding: .3rem;
+    width: 270px;
+    border-bottom-left-radius: 35rem;
+    border-bottom-right-radius: 35rem;
+    border-top-left-radius: 35rem;
+    border-top-right-radius: 35rem;
+    cursor: pointer;
+}
+
+.poloforsa .box-pm2 img
+{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+    margin-left: 3rem;
+}
+
+.poloforsa .box-pm2 p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-top:1rem;
+    margin-left: 1rem;
+}
+
+
+.poloforsa .box-pm2 .productInfo3
+{
+    position: absolute;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    border-radius: 2rem;
+    visibility: hidden;
+    margin-left:-40px; margin-top: 60px;
+}
+
+.poloforsa .box-pm2 .productInfo3 h2
+{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: .4rem;
+    margin-top: 1rem;
+}
+
+.poloforsa .box-pm2 .productInfo3 p
+{
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    margin-left: 40px;
+}
+/* poloforsa stayle set ends  */
+
+/* social media stayle set starts  */
+.social .box-sc1
+{
+    position: absolute;
+    top: 80%; left: 43%;
+}
+.social .box-sc1 ul 
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.social .box-sc1 ul li 
+{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+
+.social .box-sc1 ul li:hover
+{
+    transform: translateY(-.8rem);
+}
+
+/* social media stayle set ends  */
